@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Pricing Table é uma pagina de exibição de preços para diferentes planos de um serviço, bastando inserir ao projeto um formulario para que o usuário possa ser direcionado ao preenchimento de seu plano.<br>
 Utilizado processo de responsividade para comportamento visual e funcional diferenciado em mobiles.
 
--[Visite o projeto online](https://celo-gomes.github.io/rkt-port)
+-[Visite o projeto online](https://celo-gomes.github.io/pricing/)
 
 ## 🔖 Layout
 
