@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pricing Table</title>
+</head>
+<body>
+    <div id="rectangle">
+        <div id="rectBlue">
+            <h1  style="margin-bottom: 15px;">Conheça nossos planos</h1>
+            <small>conheça nossas soluções e escolha o plano ideal<br>para o seu próximo projeto</small>
+        </div>
+
+        <img src="./assets/arrowUP.svg" alt="arrow" class="arrow" onclick="rollUp()" id="arrowUp">
+
+        <img src="./assets/arrowDown.svg" alt="arrow" class="arrow" onclick="rollDown()" id="arrowDown">
+
+        <div id="prices">
+            <div id="free" class="card">
+                <p><strong>Free</strong></p>
+                <h1>R$ 0,<small>00</small></h1><small>/mês</small>
+                <p>Lorem ipsum dolor amet.</p>
+                <hr style="width: 200px; margin-left: 25px; opacity: .3;">
+                <p>
+                    <img src="./assets/check.svg" alt="check"> Lorem ipsum dolor sit.<br>
+                    <img src="./assets/check.svg" alt="check"> Lorem ipsum dolor sit.<br>
+                </p>
+                <div id="signFree" class="sign" onclick="test()">ASSINAR</div>
+            </div>
+
+            <div id="basic" class="card">                   
+                <div id="popular">
+                    <p><strong>Básico</strong></p>
+                    <div id="info">
+                        <small>Popular</small>
+                    </div>
+                </div>
+                <h1>R$ 29,<small>00</small></h1><small>/mês</small>
+                <p>Lorem ipsum dolor amet.</p>
+                <hr style="width: 200px; margin-left: 25px; opacity: .3;">
+                <p>
+                    <img src="./assets/check.svg" alt="check"> Lorem ipsum dolor sit.<br>
+                    <img src="./assets/check.svg" alt="check"> Lorem ipsum dolor sit.<br>
+                    <img src="./assets/check.svg" alt="check"> Lorem ipsum dolor sit.<br>
+                </p>
+                <div id="signBasic" class="sign">ASSINAR</div>
+
+            </div>
+            <div id="professional" class="card">
+                <p><strong>Profissional</strong></p>
+                <h1>R$ 59,<small>00</small></h1><small>/mês</small>
+                <p>Lorem ipsum dolor amet.</p>
+                <hr style="width: 200px; margin-left: 25px; opacity: .3;">
+                <p>
+                    <img src="./assets/check.svg" alt="check"> Lorem ipsum dolor sit.<br>
+                    <img src="./assets/check.svg" alt="check"> Lorem ipsum dolor sit.<br>
+                    <img src="./assets/check.svg" alt="check"> Lorem ipsum dolor sit.<br>
+                    <img src="./assets/check.svg" alt="check"> Lorem ipsum dolor sit.<br>
+                </p>
+                <div id="signProfessional" class="sign">ASSINAR</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

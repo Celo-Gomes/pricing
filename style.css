@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Open Sans', sans-serif;   
+}
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+}
+body{
+    background-color: var(--gray);  
+}
+#rectangle{
+    width: 1100px;
+    height: 550px;
+    position: relative;
+    left: 10%;
+    top: 75px;
+    border-radius: 20px 20px 0 0;
+    background-color: var(--page-background);    
+}
+#rectBlue{
+    width: 1100px;
+    height: 275px;
+    background-color: var(--blue);
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+.arrow{
+    width: 30px;
+    position: fixed;
+    right: 1px;
+    opacity: 0;
+    z-index: 1;
+}
+#arrowUp{
+    top: 45%;
+}
+#arrowDown{
+    top: 55%;
+}
+#prices{
+    width: 1100px;
+    height: 300px;
+    display: flex;
+    position: relative;
+    top: 200px; 
+    justify-content: center;
+    gap: 30px;   
+}
+#prices h1{
+    display: inline;
+    padding-left: 15px;
+    font-size: 24px;   
+}
+#prices p{
+    padding: 15px;
+    font-size: 14px;
+    color: var(--gray);
+}
+.sign{
+    width: 200px;
+    height: 30px;
+    border: 1px var(--blue) solid;
+    border-radius: 10px;
+    padding: 3px 70px;
+    position: relative;
+    left: 25px;
+    cursor: pointer;
+    transition: box-shadow .5s;
+}
+.sign:hover{
+    box-shadow: var(--blue) 4px 4px 4px;
+}
+.card{
+    width: 250px;
+    height: 310px;
+    background-color: var(--page-background);
+    border: 1px lightblue solid;
+    border-radius: 8px;
+    z-index: 0;
+}
+#signFree{
+    top: 60px;
+}
+#basic{
+    height: 330px;
+    width: 270px;
+}
+#signBasic{
+    top:36px;
+    background-color: var(--blue);
+    color: white;
+}
+#popular{
+    width: 270px;
+    height: 50px;
+    background-color: var(--yellow);
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    top: -10px;
+    left: -1px;
+    display: flex;
+    align-items: center; 
+    gap: 75px;   
+}   
+#popular p{color: var(--blue);}
+#info{
+    background-color: var(--blue);
+    color: #f9fbfc;
+    border-radius: 20px;
+    width: 80px;
+    height: 25px;
+    padding-left: 19px;
+}
+#signProfessional{
+    top: 15px;
+}
+
+@media(max-width:800px){
+    body{
+        background-color: var(--blue);
+    }
+    #rectangle{
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+    }
+    #rectBlue{
+        width: 100%;
+        border-radius: 0;
+    }
+    #prices{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+        height: auto;
+    }
+    .arrow{
+        opacity: .3;
+    }    
+}
