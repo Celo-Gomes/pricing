@@ -6,6 +6,17 @@ function rollDown(){
     document.querySelector('#professional').scrollIntoView({behavior:'smooth'})
 }
 
+function btnSign(x){
+    if(x == 'bf'){
+        document.querySelector('#signFree').style.backgroundColor = 'lightblue';
+    }
+    else if(x == 'bb'){
+        document.querySelector('#signBasic').style.backgroundColor = 'lightblue';
+    }
+    else{
+        document.querySelector('#signProfessional').style.backgroundColor = 'lightblue';
+    }
+}
 
 
 
