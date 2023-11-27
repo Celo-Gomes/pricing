@@ -74,6 +74,7 @@ body{
     left: 25px;
     cursor: pointer;
     transition: box-shadow .5s;
+    font-size: 16px;
 }
 .sign:hover{
     box-shadow: var(--blue) 4px 4px 4px;
@@ -88,7 +89,6 @@ body{
 }
 #signFree{
     top: 60px;
-    font-size: 16px;
 }
 #basic{
     height: 330px;
@@ -98,7 +98,6 @@ body{
     top:36px;
     background-color: var(--blue);
     color: white;
-    font-size: 16px;
 }
 #popular{
     width: 270px;
@@ -123,7 +122,6 @@ body{
 }
 #signProfessional{
     top: 15px;
-    font-size: 16px;
 }
 
 @media(max-width:800px){

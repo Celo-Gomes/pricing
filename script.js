@@ -5,6 +5,12 @@ function rollUp(){
 function rollDown(){
     document.querySelector('#professional').scrollIntoView({behavior:'smooth'})
 }
+
+
+
+
+
+
 // function roll(){
 //     const arrow = document.querySelector('.arrow')
 //     if(arrow.alt == 'arrowDown' ){
