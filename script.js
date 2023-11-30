@@ -1,3 +1,5 @@
+// ARROW ROLL
+
 function rollUp(){
     document.querySelector('#rectBlue').scrollIntoView({behavior:'smooth'})
 }
@@ -6,17 +8,7 @@ function rollDown(){
     document.querySelector('#professional').scrollIntoView({behavior:'smooth'})
 }
 
-// function btnSign(x){
-//     if(x == 'bf'){
-//         document.querySelector('#signFree').style.backgroundColor = 'lightblue';
-//     }
-//     else if(x == 'bb'){
-//         document.querySelector('#signBasic').style.backgroundColor = 'lightblue';
-//     }
-//     else{
-//         document.querySelector('#signProfessional').style.backgroundColor = 'lightblue';
-//     }
-// }
+// FORM CREATE / REMOVE 
 
 let elements = {
     'free': null,
@@ -31,18 +23,15 @@ let elements = {
     const card = document.getElementById(cardId);        
 
     for(const id in elements){
-        //através do laço for, será percorrido todos os elementos do objeto
+        
         if(id != cardId && elements[id]){
-            //em cada volta será analizado se o nome do objeto é diferente do parametro da função e se existe algum elemento criado.
-            document.getElementById(id).removeChild(elements[id]);//se existir, será removido todo elemento diferente do parametro
+            
+            document.getElementById(id).removeChild(elements[id]);
             document.getElementById(id).style.scale = 1;
             document.getElementById(id).style.zIndex = 0;
-
             pop.style.opacity = 1;
-
-            elements[id] = null; //assumirá null
+            elements[id] = null; 
         }
-        //else if{}
     }
 
     if(elements[cardId]){
@@ -102,10 +91,9 @@ let elements = {
         card.appendChild(element);
         elements[cardId] = element;
     }
-    // aqui será construido o elemento. Em ordem, 1°  função a ser executada.
    }
 
-   //F O R M
+   //ACTION FORM
 
    function placeHolder(status){
         let field = document.querySelector("fieldset")
@@ -127,32 +115,6 @@ let elements = {
         }
     }
     
-
-
-
-
-
-// function roll(){
-//     const arrow = document.querySelector('.arrow')
-//     if(arrow.alt == 'arrowDown' ){
-//         document.querySelector('#professional').scrollIntoView({behavior:'smooth'})
-//         arrow.src = './assets/arrowUp.svg'
-//         arrow.alt = 'arrowUp'
-//     }
-//     else{
-//         document.querySelector('#rectBlue').scrollIntoView({behavior:'smooth'})
-//         arrow.src = './assets/arrowDown.svg'
-//         arrow.alt = 'arrowDown' 
-//     }
-// }
-
-
-//if(element.scroll(h,v))
-//window.scrollTo(x,y)
-//const scrollX = window.pageXOffset;  >> posição horizontal
-//const scrollY = window.pageYOffset;
-
-// fazer transições com keyframes e animations
-//talvez aja a possibilidade de utilizar o posicionamento real para condicionais... 
+ 
 
 
