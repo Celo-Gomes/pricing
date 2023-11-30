@@ -23,6 +23,8 @@ let elements = {
     'basic': null,
     'professional': null
    }; 
+
+ let pop = document.querySelector('#popular')  
    
 
    function showForm(cardId){
@@ -35,6 +37,9 @@ let elements = {
             document.getElementById(id).removeChild(elements[id]);//se existir, será removido todo elemento diferente do parametro
             document.getElementById(id).style.scale = 1;
             document.getElementById(id).style.zIndex = 0;
+
+            pop.style.opacity = 1;
+
             elements[id] = null; //assumirá null
         }
         //else if{}
@@ -53,21 +58,22 @@ let elements = {
             option = [
                 'Seja bem vindo!!!',
                 "Vamos dar os primeiros passos...",
-                "FREE"
+                "FREE >"
             ]
         }
         else if(cardId == 'basic'){
             option = [
                 'Seja bem vindo ao Básico!!!',
                 "Vamos intensificar o conhecimento...",
-                "BÁSICO"
+                "BÁSICO >"
             ]
+            pop.style.opacity = 0;
         }
         else{
             option = [
                 'Seja bem vindo ao Inferno!!!',
                 "Aqui o filho chora e a mãe não vê...",
-                "PROFISSIONAL"
+                "PROFISSIONAL >"
             ]
         }
         
@@ -78,31 +84,25 @@ let elements = {
             <form action="">
                 <fieldset>
                     <legend>${option[2]}</legend>
-                    <p>
                         <input type="text" name="name" id="name" placeholder="Nome:" onclick="placeHolder('name')">
-                    </p>
-                    <p>
+                    <br>
                         <input type="email" name="mail" id="mail" placeholder="" onclick="placeHolder('mail')">
-                    </p>
-                    <p>
+                    <br>
                         <input type="text" name="address" id="address" placeholder="" onclick="placeHolder('address')">
-                    </p>
-                    <p>
+                    <br>
                         <input type="number" name="phone" id="phone" onclick="placeHolder('')">
-                    </p>
-                    <p>
-                        <button type="button" id="sendBtn" disabled>ENVIAR</button>
-                    </p>
+                    <br>
+                        <button type="button" id="sendBtn" onclick="showForm()" disabled>ENVIAR</button>
                 </fieldset>
             </form>
         `;
         element.setAttribute('id','element');
-        card.style.scale = 1.5;
+        card.style.scale = 1.2;
         card.style.zIndex  = 1
         card.appendChild(element);
         elements[cardId] = element;
     }
-    // aqui será construido o elemento. Em ordem, o 1° a preimeira função a ser executada.
+    // aqui será construido o elemento. Em ordem, 1°  função a ser executada.
    }
 
    //F O R M
@@ -122,10 +122,11 @@ let elements = {
         }
         else{
             document.querySelector('#sendBtn').disabled = false;
+            document.querySelector('#sendBtn').style.opacity = 1;
             field.style.backgroundImage = "url('./assets/icone-fone.png')"
         }
-        //sugestão: ao clicar sobre input mudar background para tema
     }
+    
 
 
 
