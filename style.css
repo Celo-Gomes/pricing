@@ -85,6 +85,7 @@ body{
     background-color: var(--page-background);
     border: 1px lightblue solid;
     border-radius: 8px;
+    position: relative;
     z-index: 0;
 }
 #signFree{
@@ -122,6 +123,39 @@ body{
 }
 #signProfessional{
     top: 15px;
+}
+
+#element{
+    width: inherit;
+    height: inherit;
+    font-size: 11px;
+    position: absolute;
+    background-color: aquamarine;
+    top: 0px; 
+}
+#element h2{
+    color: red;
+    margin: 6px;
+}
+#element p{
+    margin: 10px;
+}
+#element input{
+    font-size: 8px;
+    width: 95%;
+    height: 12px;
+    margin: 3px;
+    border-radius: 5px;
+}
+#element button{
+    height: 18px;
+    border-radius: 5px;
+}
+#element fieldset{
+    background-image: url(./assets/icone-contato.png);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
 @media(max-width:800px){
