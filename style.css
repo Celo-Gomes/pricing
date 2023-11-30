@@ -86,6 +86,7 @@ body{
     border: 1px lightblue solid;
     border-radius: 8px;
     position: relative;
+    transition: .8s;
     z-index: 0;
 }
 #signFree{
@@ -128,35 +129,60 @@ body{
 #element{
     width: inherit;
     height: inherit;
+    margin: -1px;
+    border: 1px solid lightblue;
     font-size: 11px;
     position: absolute;
-    background-color: aquamarine;
+    background-color: rgb(202, 232, 241);
     top: 0px; 
+    left: 0px;
+    border-radius: inherit;
 }
 #element h2{
-    color: red;
-    margin: 6px;
+    color: var(--blue);
+    margin: 20px 6px -5px;
 }
 #element p{
-    margin: 10px;
+    margin: 10px ;
 }
-#element input{
-    font-size: 8px;
-    width: 95%;
-    height: 12px;
-    margin: 3px;
-    border-radius: 5px;
-}
-#element button{
-    height: 18px;
-    border-radius: 5px;
+#element form{
+    margin-left: 4px;
 }
 #element fieldset{
+    width: 98%;
     background-image: url(./assets/icone-contato.png);
-    background-size: 150px;
+    background-size: 120px;
     background-repeat: no-repeat;
     background-position: right bottom;
+    background-color: var(--page-background);
+    border-radius: 5%;
 }
+#element legend{
+    margin-left: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--gray);
+}
+#element input{
+    width: 98%;
+    margin: 3px;
+    margin-bottom: 8px; 
+    border-radius: 5px;
+    background: transparent;
+}
+#element button{
+    width: 50px;
+    height: 18px;
+    border-radius: 5px;
+    margin: 3px;
+    font-size: 9px;
+    font-weight: bold;
+    opacity: .1;
+    background-color: var(--blue);
+    color: var(--page-background);
+}
+
 
 @media(max-width:800px){
     body{
