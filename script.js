@@ -47,14 +47,16 @@ let elements = {
             option = [
                 'Seja bem vindo!!!',
                 "Vamos dar os primeiros passos...",
-                "FREE >"
+                "FREE >",
+                "free"
             ]
         }
         else if(cardId == 'basic'){
             option = [
                 'Seja bem vindo ao Básico!!!',
                 "Vamos intensificar o conhecimento...",
-                "BÁSICO >"
+                "BÁSICO >",
+                "basic"
             ]
             pop.style.opacity = 0;
         }
@@ -62,7 +64,8 @@ let elements = {
             option = [
                 'Seja bem vindo ao Inferno!!!',
                 "Aqui o filho chora e a mãe não vê...",
-                "PROFISSIONAL >"
+                "PROFISSIONAL >",
+                "professional"
             ]
         }
         // Cria uma nova div que sobreponha a div pai
@@ -81,7 +84,7 @@ let elements = {
                     <br>
                         <input type="number" name="phone" id="phone" onclick="placeHolder('')">
                     <br>
-                        <button type="button" id="sendBtn" onclick="showForm()" disabled>ENVIAR</button>
+                        <button type="button" id="sendBtn" onclick="showForm(${option[3]})" disabled>ENVIAR</button>
                 </fieldset>
             </form>
         `;
