@@ -102,6 +102,7 @@ let elements = {
         let field = document.querySelector("fieldset")
         if(status == 'name'){
             document.querySelector('#mail').placeholder = 'E-mail:';
+            field.style.backgroundImage = "url('./assets/icone-contato.png')"
         }
         else if(status == 'mail'){
             document.querySelector('#address').placeholder = "Endereço:";
