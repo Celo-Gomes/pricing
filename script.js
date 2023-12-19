@@ -19,7 +19,7 @@ let elements = {
  let pop = document.querySelector('#popular')  
    
 
-   function showForm(cardId){
+   function showForm(cardId){    // REMOVE a div,se já criada em qualquer outra div
     const card = document.getElementById(cardId);        
 
     for(const id in elements){
@@ -35,13 +35,13 @@ let elements = {
     }
 
     if(elements[cardId]){
-        //aqui removera um elemento de mesmo parametro
+        //REMOVE uma div, se já criada, de mesmo parametro
         card.removeChild(elements[cardId]);
         card.style.scale = 1;
         elements[cardId]= null;
-        //usar para voltar a tela limpa quando submit form
+        //usar para voltar a tela quando submit form
     }
-    else{
+    else{  // CRIA a opção de conteudo da nova div 
         let option = []
         if(cardId == 'free'){
             option = [
@@ -65,7 +65,7 @@ let elements = {
                 "PROFISSIONAL >"
             ]
         }
-        
+        // Cria uma nova div que sobreponha a div pai
         element = document.createElement('div')
         element.innerHTML = `
             <h2>${option[0]}</h2>
