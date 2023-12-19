@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Pricing Table é uma pagina de exibição de preços para diferentes planos de um serviço, com a funcionalidade de exibir um formulário diferenciado para cada plano que o usuário ecolher. Possui uma modularidade gráfica, no formulário, que reage ao selecionar o campo de preenchimento "fantasma".<br>
+Pricing Table é uma pagina de exibição de preços para diferentes planos de um serviço, com a funcionalidade de exibir um formulário diferenciado para cada plano que o usuário escolher. Possui uma modularidade gráfica, no formulário, que reage ao selecionar o campo de preenchimento "fantasma".<br>
 Utilizado processo de responsividade para comportamento visual e funcional diferenciado em mobiles.
 
 -[Visite o projeto online](https://celo-gomes.github.io/pricing/)
